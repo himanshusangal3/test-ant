@@ -1,7 +1,7 @@
 <project name="nation" default="full-suite" basedir=".">
  
     <!-- GLOBAL VARIABLES -->
-    <property name="source" value="app" />
+    <property name="source" value="/var/jenkins_home" />
     <!-- END -->
  
     <!-- AVAILABLE COMMANDS -->
