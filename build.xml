@@ -22,7 +22,7 @@
             <arg line="-l ${source}" />
         </exec>
     </target>
-    <!-- END --->
+    <!-- END -->
 <target name="phpunit">
   <exec dir="${basedir}" executable="bash" newenvironment="false" failonerror="true">
     <arg value="counter.sh"/>
