@@ -23,5 +23,13 @@
         </exec>
     </target>
     <!-- END -->
- 
+    <macrodef name="buildnumber">
+	     <sequential>
+		      <exec dir="${basedir}" executable="bash" outputproperty="env.BuildID">
+			       <arg value="-c"/>
+			       <arg value="counter.sh; buildid"/>
+		      </exec>
+	     </sequential>
+    </macrodef>
+
 </project>
