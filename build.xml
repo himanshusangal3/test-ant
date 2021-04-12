@@ -23,13 +23,10 @@
         </exec>
     </target>
     <!-- END -->
-    <macrodef name="buildnumber">
-	     <sequential>
-		      <exec dir="${basedir}" executable="bash" outputproperty="env.BuildID">
-			       <arg value="-c"/>
-			       <arg value="counter.sh; buildid"/>
-		      </exec>
-	     </sequential>
-    </macrodef>
+<target name="phpunit">
+  <exec dir="${basedir}" executable="bash" newenvironment="false" failonerror="true">
+    <arg value="counter.sh"/>
+  </exec>
+ </target>
 
 </project>
